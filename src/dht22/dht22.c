@@ -127,7 +127,7 @@ void DHT22_READHUMID(char* data, char* humid_s)
         cnt <<= 1;
     }
 
-    char dights[6] = "00.0\%";
+    char dights[6] = "00.0%";
     dights[0] = humid / 100 + 48;
     dights[1] = ((humid / 10) % 10) + 48;
     dights[3] = (humid % 10) + 48;
